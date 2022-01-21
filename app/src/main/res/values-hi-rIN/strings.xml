@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">असाइनमेंट 5</string>
+    <string name="Personal_Details">व्यक्तिगत विवरण</string>
+    <string name="name">नाम</string>
+    <string name="Email">ईमेल</string>
+    <string name="phone">संपर्क नंबर</string>
+    <string name="Address">पता</string>
+    <string name="Country">देश</string>
+    <string name="DOB">जन्म तिथि</string>
+    <string name="male">पुरुष</string>
+    <string name="female">महिला</string>
+    <string name="gender">जेंडर</string>
+    <string name="Hobbies">शौक</string>
+    <string name="Reading">पढ़ना</string>
+    <string name="Chess">शतरंज</string>
+    <string name="Drawing">चित्र कला</string>
+    <string name="next">आगे बढ़े</string>
+    <string name="percentage">प्रतिशत :</string>
+    <string name="CGPA">सीजीपीए : </string>
+    <string name="Graduation">स्नातक</string>
+    <string name="Schooling">स्कूली शिक्षा</string>
+    <string name="back">पीछे</string>
+    <string name="Sign_Up">साइनअप</string>
+    <string name="Educational_Details">शैक्षिक विवरण</string>
+    <string name="Hindi">हिन्दी</string>
+    <string name="English">अंग्रेज़ी</string>
+
+    <string-array name="schoolArray">
+        <item>एसएससी</item>
+        <item>एचएससी</item>
+    </string-array>
+
+    <string-array name="graduationArray">
+        <item>बीई</item>
+        <item>बीटेक</item>
+        <item>एमबीबीएस</item>
+        <item>बीएससी</item>
+        <item>बीकॉम</item>
+        <item>बीबीए</item>
+        <item>बीसीए</item>
+    </string-array>
+
+    <string-array name="countryArray">
+        <item>भारत</item>
+        <item>चीन</item>
+        <item>अमरीका</item>
+        <item>रूस</item>
+        <item>ब्रिटेन</item>
+        <item>जर्मनी</item>
+    </string-array>
+
+</resources>

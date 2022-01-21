@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">Assignment 5</string>
+    <string name="Personal_Details">Personal Details</string>
+    <string name="name">Name</string>
+    <string name="Email">Email</string>
+    <string name="phone">Contact Number</string>
+    <string name="Address">Address</string>
+    <string name="Country">Country</string>
+    <string name="DOB">DOB</string>
+    <string name="male">male</string>
+    <string name="female">female</string>
+    <string name="gender">Gender</string>
+    <string name="Hobbies">Hobbies</string>
+    <string name="Reading">Reading</string>
+    <string name="Chess">Chess</string>
+    <string name="Drawing">Drawing</string>
+    <string name="next">next</string>
+    <string name="percentage">Percentage :</string>
+    <string name="CGPA">CGPA : </string>
+    <string name="Graduation">Graduation</string>
+    <string name="Schooling">Schooling</string>
+    <string name="back">Back</string>
+    <string name="Sign_Up">Sign_Up</string>
+    <string name="Educational_Details">Educational Details</string>
+    <string name="English">English</string>
+    <string name="Hindi">Hindi</string>
+
+    <string-array name="schoolArray">
+        <item>SSC</item>
+        <item>HSC</item>
+    </string-array>
+
+    <string-array name="graduationArray">
+        <item>BE</item>
+        <item>BTech</item>
+        <item>MBBS</item>
+        <item>BSc</item>
+        <item>BCom</item>
+        <item>BBA</item>
+        <item>BCA</item>
+    </string-array>
+
+    <string-array name="countryArray">
+        <item>India</item>
+        <item>China</item>
+        <item>America</item>
+        <item>Russia</item>
+        <item>Uk</item>
+        <item>Germany</item>
+    </string-array>
+
+</resources>
