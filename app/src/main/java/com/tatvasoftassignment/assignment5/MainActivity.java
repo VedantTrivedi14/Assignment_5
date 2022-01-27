@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         init_id();
-        setDOB();
+        setDateOfBirth();
         setCountry();
 
         btnNext.setOnClickListener(v -> {
@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
         ac_txtCountry = findViewById(R.id.ac_txtCountry);
     }
 
-    private void setDOB() {
+    private void setDateOfBirth() {
         etDate.setOnClickListener(v -> {
             int date, set_month, set_year;
             GregorianCalendar gc = new GregorianCalendar();
