@@ -24,6 +24,19 @@
     <string name="Educational_Details">Educational Details</string>
     <string name="English">English</string>
     <string name="Hindi">Hindi</string>
+    <string name="schooling">Select schooling</string>
+    <string name="Enter_Name">Enter Name</string>
+    <string name="Enter_Email">Enter Email</string>
+    <string name="select_Date">select Date</string>
+    <string name="Enter_Address">Enter Address</string>
+    <string name="Enter_Contact_Number">Enter Contact Number</string>
+    <string name="select_country">"select country</string>
+    <string name="select_at_least_one_hobby">select at least one hobby</string>
+    <string name="select_Graduation">select Graduation</string>
+    <string name="set_Percentage">"set Percentage"</string>
+    <string name="set_cgpa">set cgpa</string>
+    <string name="SignUp_successFully">SignUp successFully</string>
+
 
     <string-array name="schoolArray">
         <item>SSC</item>

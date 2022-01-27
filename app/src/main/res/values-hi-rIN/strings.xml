@@ -24,6 +24,7 @@
     <string name="Educational_Details">शैक्षिक विवरण</string>
     <string name="Hindi">हिन्दी</string>
     <string name="English">अंग्रेज़ी</string>
+    <string name="schooling">Select schooling</string>
 
     <string-array name="schoolArray">
         <item>एसएससी</item>

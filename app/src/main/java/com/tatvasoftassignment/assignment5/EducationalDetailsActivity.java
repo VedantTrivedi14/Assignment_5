@@ -1,6 +1,5 @@
 package com.tatvasoftassignment.assignment5;
 
-import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
@@ -12,6 +11,8 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.slider.Slider;
+
+import java.text.MessageFormat;
 
 public class EducationalDetailsActivity extends AppCompatActivity {
 
@@ -31,7 +32,7 @@ public class EducationalDetailsActivity extends AppCompatActivity {
 
         btnSave.setOnClickListener(v -> {
             if (isValid()) {
-                Toast.makeText(this, "SignUp successFully", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, getString(R.string.SignUp_successFully), Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -62,28 +63,30 @@ public class EducationalDetailsActivity extends AppCompatActivity {
     private void setPercentage_and_setCgpa() {
 
         percentageSlider.addOnSliderTouchListener(new Slider.OnSliderTouchListener() {
+
             @Override
             public void onStartTrackingTouch(@NonNull Slider slider) {
             }
 
-            @SuppressLint("SetTextI18n")
+
             @Override
             public void onStopTrackingTouch(@NonNull Slider slider) {
 
-                txtPercentageValue.setText(" " + slider.getValue() + "%");
+                txtPercentageValue.setText(MessageFormat.format("{0}%", slider.getValue()));
             }
         });
 
         cgpaSlider.addOnSliderTouchListener(new Slider.OnSliderTouchListener() {
+
             @Override
             public void onStartTrackingTouch(@NonNull Slider slider) {
             }
 
-            @SuppressLint("SetTextI18n")
+
             @Override
             public void onStopTrackingTouch(@NonNull Slider slider) {
 
-                txtCgpaValue.setText(" " + slider.getValue() + "%");
+                txtCgpaValue.setText(MessageFormat.format(" {0}%", slider.getValue()));
             }
         });
     }
@@ -92,16 +95,16 @@ public class EducationalDetailsActivity extends AppCompatActivity {
         boolean valid = true;
 
         if (ac_txtSchool.getText().toString().length() == 0) {
-            Toast.makeText(this, "select schooling", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, getString(R.string.select_Graduation), Toast.LENGTH_LONG).show();
             valid = false;
         } else if (ac_txtGraduation.getText().toString().length() == 0) {
-            Toast.makeText(this, "select Graduation", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, getString(R.string.select_Graduation), Toast.LENGTH_LONG).show();
             valid = false;
         } else if (txtPercentageValue.getText().toString().length() == 0) {
-            Toast.makeText(this, "set Percentage", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, getString(R.string.set_Percentage), Toast.LENGTH_LONG).show();
             valid = false;
         } else if (txtCgpaValue.getText().toString().length() == 0) {
-            Toast.makeText(this, "set cgpa", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, getString(R.string.set_cgpa), Toast.LENGTH_LONG).show();
             valid = false;
         }
 

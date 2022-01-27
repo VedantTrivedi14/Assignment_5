@@ -80,25 +80,25 @@ public class MainActivity extends AppCompatActivity {
         boolean valid = true;
 
         if (etName.getText().toString().length() == 0) {
-            Toast.makeText(this, "Enter Name", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, getString(R.string.Enter_Name), Toast.LENGTH_LONG).show();
             valid = false;
         } else if (!Patterns.EMAIL_ADDRESS.matcher(etEmail.getText().toString()).matches()) {
-            Toast.makeText(this, "Enter Email", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, getString(R.string.Enter_Email), Toast.LENGTH_LONG).show();
             valid = false;
         } else if (etDate.getText().toString().length() == 0) {
-            Toast.makeText(this, "select Date", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, getString(R.string.select_Date), Toast.LENGTH_LONG).show();
             valid = false;
         } else if (etAddress.getText().toString().length() == 0) {
-            Toast.makeText(this, "Enter Address", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, getString(R.string.Enter_Address), Toast.LENGTH_LONG).show();
             valid = false;
         } else if (etPhone.getText().toString().length() != 10) {
-            Toast.makeText(this, "Enter Contact Number", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, getString(R.string.Enter_Contact_Number), Toast.LENGTH_LONG).show();
             valid = false;
         } else if (ac_txtCountry.getText().toString().length() == 0) {
-            Toast.makeText(this, "select country", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, getString(R.string.select_country), Toast.LENGTH_LONG).show();
             valid = false;
         } else if (!checkReading.isChecked() && !checkChess.isChecked() && !checkDrawing.isChecked()) {
-            Toast.makeText(this, "select at least one hobby", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, getString(R.string.select_at_least_one_hobby), Toast.LENGTH_LONG).show();
             valid = false;
         }
 
