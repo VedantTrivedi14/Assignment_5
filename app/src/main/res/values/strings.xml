@@ -30,11 +30,11 @@
     <string name="select_Date">select Date</string>
     <string name="Enter_Address">Enter Address</string>
     <string name="Enter_Contact_Number">Enter Contact Number</string>
-    <string name="select_country">"select country</string>
-    <string name="select_at_least_one_hobby">select at least one hobby</string>
-    <string name="select_Graduation">select Graduation</string>
-    <string name="set_Percentage">"set Percentage"</string>
-    <string name="set_cgpa">set cgpa</string>
+    <string name="select_country">Select country</string>
+    <string name="select_at_least_one_hobby">Select at least one hobby</string>
+    <string name="select_Graduation">Select Graduation</string>
+    <string name="set_Percentage">Set Percentage</string>
+    <string name="set_cgpa">Set cgpa</string>
     <string name="SignUp_successFully">SignUp successFully</string>
 
 
