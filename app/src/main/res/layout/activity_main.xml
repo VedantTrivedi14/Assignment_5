@@ -49,22 +49,26 @@
 
         </com.google.android.material.textfield.TextInputLayout>
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/etPhoneField"
-            style="@style/etField"
-            android:hint="@string/phone"
-            app:endIconMode="clear_text"
-            app:helperText="Required*"
-            app:helperTextTextColor="@color/red"
-            app:prefixText="+91"
-            app:startIconDrawable="@drawable/ic_baseline_phone_24">
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/etPhone"
-                style="@style/editText"
-                android:inputType="number"
-                android:maxLength="10" />
-        </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/etPhoneField"
+                style="@style/etField"
+                android:layout_weight="1"
+                android:hint="@string/phone"
+                app:endIconMode="clear_text"
+                app:helperText="Required*"
+                app:helperTextTextColor="@color/red"
+                app:startIconDrawable="@drawable/ic_baseline_phone_24">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etPhone"
+                    android:layout_weight="1"
+                    style="@style/editText"
+                    android:inputType="number"
+                    android:maxLength="10" />
+            </com.google.android.material.textfield.TextInputLayout>
+
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/etAddressField"
@@ -100,6 +104,7 @@
                 tools:ignore="LabelFor" />
         </com.google.android.material.textfield.TextInputLayout>
 
+
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/etDateField"
             style="@style/etField"
@@ -110,8 +115,7 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/etDate"
-                style="@style/editText"
-                android:focusable="false" />
+                style="@style/editText" />
 
         </com.google.android.material.textfield.TextInputLayout>
 

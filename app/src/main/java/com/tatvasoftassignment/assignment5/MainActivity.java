@@ -9,6 +9,7 @@ import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -22,15 +23,18 @@ public class MainActivity extends AppCompatActivity {
     private CheckBox checkReading, checkChess, checkDrawing;
     private Button btnNext;
     private AutoCompleteTextView ac_txtCountry;
+    private Spinner countryCode;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
         init_id();
         setDateOfBirth();
         setCountry();
+        setCountryCode();
 
         btnNext.setOnClickListener(v -> {
             if (isValid()) {
@@ -52,6 +56,7 @@ public class MainActivity extends AppCompatActivity {
         checkDrawing = findViewById(R.id.checkDrawing);
         btnNext = findViewById(R.id.btnNext);
         ac_txtCountry = findViewById(R.id.ac_txtCountry);
+        countryCode = findViewById(R.id.countryCode);
     }
 
     private void setDateOfBirth() {
@@ -74,6 +79,11 @@ public class MainActivity extends AppCompatActivity {
         String[] country = getResources().getStringArray(R.array.countryArray);
         ArrayAdapter<String> countryAdapter = new ArrayAdapter<>(this, R.layout.layout_dropdown_item, country);
         ac_txtCountry.setAdapter(countryAdapter);
+    }
+    private void setCountryCode() {
+        String[] code = getResources().getStringArray(R.array.countryCodes);
+        ArrayAdapter<String> countryCodeAdapter = new ArrayAdapter<>(this, R.layout.support_simple_spinner_dropdown_item, code);
+        countryCode.setAdapter(countryCodeAdapter);
     }
 
     private Boolean isValid() {
