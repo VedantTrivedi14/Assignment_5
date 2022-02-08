@@ -59,7 +59,8 @@
                 app:endIconMode="clear_text"
                 app:helperText="Required*"
                 app:helperTextTextColor="@color/red"
-                app:startIconDrawable="@drawable/ic_baseline_phone_24">
+                app:startIconDrawable="@drawable/ic_baseline_phone_24"
+                android:layout_height="0dp">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/etPhone"
