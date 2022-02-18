@@ -54,12 +54,12 @@
     </string-array>
 
     <string-array name="countryArray">
-        <item>(+91) India</item>
-        <item>(+86) China</item>
-        <item>(+01) America</item>
-        <item>(+07) Russia</item>
-        <item>(+44) Uk</item>
-        <item>(+49) Germany</item>
+        <item> India </item>
+        <item> China </item>
+        <item> America </item>
+        <item> Russia </item>
+        <item> Uk </item>
+        <item> Germany </item>
     </string-array>
 
 

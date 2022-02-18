@@ -64,12 +64,4 @@
         <item name="android:layout_margin">@dimen/margin</item>
     </style>
 
-</resources><!--android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/margin"-->
-    <!--android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/Hobbies"
-                    android:padding="@dimen/padding"
-                    android:textSize="@dimen/textSize"
-                    android:textColor="@color/purple_500"-->
+</resources>
