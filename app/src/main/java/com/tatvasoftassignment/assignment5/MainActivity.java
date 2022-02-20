@@ -3,6 +3,7 @@ package com.tatvasoftassignment.assignment5;
 import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.util.Patterns;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
@@ -58,16 +59,18 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void setDateOfBirth() {
+        Calendar calendar = Calendar.getInstance();
+        DatePickerDialog.OnDateSetListener datePicker = (datePicker1, year, month, day) -> {
+
+
+            calendar.set(Calendar.YEAR, year);
+            calendar.set(Calendar.MONTH, month);
+            calendar.set(Calendar.DAY_OF_MONTH, day);
+            String launchDate = day + "/" + (month+1) + "/" + year;
+            etDate.setText(launchDate);
+        };
         etDate.setOnClickListener(v -> {
-            int date, set_month, set_year;
-            GregorianCalendar gc = new GregorianCalendar();
-            date = gc.get(Calendar.DAY_OF_MONTH);
-            set_month = gc.get(Calendar.MONTH);
-            set_year = gc.get(Calendar.YEAR);
-            DatePickerDialog dpd = new DatePickerDialog(this, (datePicker, year, month, day) -> {
-                String launchDate = day + "/" + (month + 1) + "/" + year;
-                etDate.setText(launchDate);
-            }, set_year, set_month, date);
+            DatePickerDialog dpd = new DatePickerDialog(this, datePicker, calendar.get(Calendar.YEAR),calendar.get(Calendar.MONTH), calendar.get(Calendar.DAY_OF_MONTH) );
             dpd.show();
         });
 

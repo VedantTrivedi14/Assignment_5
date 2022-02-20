@@ -28,7 +28,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/etName"
                 style="@style/editText"
-                android:maxLength="20" />
+                android:inputType="textCapWords"/>
 
         </com.google.android.material.textfield.TextInputLayout>
 
