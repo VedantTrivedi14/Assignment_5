@@ -6,28 +6,32 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_height="wrap_content">
 
         <TextView
+            android:id="@+id/txtHeader"
             style="@style/pageHeader"
-            android:text="@string/Personal_Details" />
+            android:text="@string/Personal_Details"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/etNameField"
             style="@style/etField"
             android:hint="@string/name"
             android:inputType="textCapWords"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtHeader"
             app:endIconMode="clear_text"
-            app:helperText="Required*"
-            app:helperTextTextColor="@color/red"
             app:startIconDrawable="@drawable/ic_baseline_person_24">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/etName"
                 style="@style/editText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtHeader"
                 android:inputType="textCapWords"/>
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -38,13 +42,15 @@
             style="@style/etField"
             android:hint="@string/Email"
             app:endIconMode="clear_text"
-            app:helperText="Required*"
-            app:helperTextTextColor="@color/red"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/etNameField"
             app:startIconDrawable="@drawable/ic_baseline_email_24">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/etEmail"
                 style="@style/editText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/etNameField"
                 android:inputType="textEmailAddress" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -57,8 +63,8 @@
                 android:layout_weight="1"
                 android:hint="@string/phone"
                 app:endIconMode="clear_text"
-                app:helperText="Required*"
-                app:helperTextTextColor="@color/red"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/etEmailField"
                 app:startIconDrawable="@drawable/ic_baseline_phone_24"
                 android:layout_height="0dp">
 
@@ -66,6 +72,8 @@
                     android:id="@+id/etPhone"
                     android:layout_weight="1"
                     style="@style/editText"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/etEmailField"
                     android:inputType="number"
                     android:maxLength="10" />
             </com.google.android.material.textfield.TextInputLayout>
@@ -75,14 +83,16 @@
             android:id="@+id/etAddressField"
             style="@style/etField"
             android:hint="@string/Address"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/etPhoneField"
             app:endIconMode="clear_text"
-            app:helperText="Required*"
-            app:helperTextTextColor="@color/red"
             app:startIconDrawable="@drawable/ic_baseline_home_24">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/etAddress"
                 style="@style/editText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/etPhoneField"
                 android:inputType="textPostalAddress" />
 
 
@@ -93,8 +103,8 @@
             android:id="@+id/etCountryField"
             style="@style/etDropDownField"
             android:hint="@string/Country"
-            app:helperText="Required*"
-            app:helperTextTextColor="@color/red"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/etAddressField"
             app:startIconDrawable="@drawable/ic_baseline_flag_24">
 
 
@@ -102,6 +112,8 @@
                 android:id="@+id/ac_txtCountry"
                 style="@style/editText"
                 android:inputType="none"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/etAddressField"
                 tools:ignore="LabelFor" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -110,30 +122,33 @@
             android:id="@+id/etDateField"
             style="@style/etField"
             android:hint="@string/DOB"
-            app:helperText="Required*"
-            app:helperTextTextColor="@color/red"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/etCountryField"
             app:startIconDrawable="@drawable/ic_baseline_date_range_24">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/etDate"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/etCountryField"
                 style="@style/editText" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+
 
             <TextView
                 android:id="@+id/txtGender"
                 style="@style/main_text"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/etDateField"
                 android:text="@string/gender" />
 
             <RadioGroup
                 android:id="@+id/rgButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtGender"
                 android:orientation="horizontal">
 
                 <RadioButton
@@ -150,17 +165,16 @@
                     android:text="@string/female" />
             </RadioGroup>
 
-        </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+
+
 
             <ImageView
                 android:id="@+id/imgHobbies"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/rgButton"
                 android:padding="@dimen/padding"
                 android:src="@drawable/ic_baseline_draw_24"
                 tools:ignore="ContentDescription" />
@@ -168,36 +182,42 @@
             <TextView
                 android:id="@+id/txtHobbies"
                 style="@style/main_text"
+                app:layout_constraintStart_toEndOf="@id/imgHobbies"
+                app:layout_constraintTop_toBottomOf="@id/rgButton"
                 android:text="@string/Hobbies" />
-        </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
 
             <CheckBox
                 android:id="@+id/checkReading"
                 style="@style/checkStyle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtHobbies"
                 android:text="@string/Reading" />
 
             <CheckBox
                 android:id="@+id/checkChess"
                 style="@style/checkStyle"
+                app:layout_constraintStart_toEndOf="@id/checkReading"
+                app:layout_constraintTop_toBottomOf="@id/txtHobbies"
                 android:text="@string/Chess" />
 
             <CheckBox
                 android:id="@+id/checkDrawing"
                 style="@style/checkStyle"
+                app:layout_constraintStart_toEndOf="@id/checkChess"
+                app:layout_constraintTop_toBottomOf="@id/txtHobbies"
                 android:text="@string/Drawing" />
-        </LinearLayout>
+
 
         <Button
             android:id="@+id/btnNext"
             style="@style/btnStyle"
             android:layout_gravity="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/checkReading"
             android:text="@string/next" />
-    </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 </ScrollView>

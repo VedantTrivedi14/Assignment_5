@@ -3,7 +3,24 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/AndroidStudioProjects/Tatvasoft_Android/Assignments/Assignment5/app/src/main/res/layout/activity_main.xml" value="0.1875" />
+        <entry key="..\:/AndroidStudioProjects/Tatvasoft_Android/Assignments/Assignment5/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.16" />
+        <entry key="..\:/AndroidStudioProjects/Tatvasoft_Android/Assignments/Assignment5/app/src/main/res/drawable/ic_baseline_date_range_24.xml" value="0.16" />
+        <entry key="..\:/AndroidStudioProjects/Tatvasoft_Android/Assignments/Assignment5/app/src/main/res/drawable/ic_baseline_draw_24.xml" value="0.16" />
+        <entry key="..\:/AndroidStudioProjects/Tatvasoft_Android/Assignments/Assignment5/app/src/main/res/drawable/ic_baseline_email_24.xml" value="0.16" />
+        <entry key="..\:/AndroidStudioProjects/Tatvasoft_Android/Assignments/Assignment5/app/src/main/res/drawable/ic_baseline_flag_24.xml" value="0.16" />
+        <entry key="..\:/AndroidStudioProjects/Tatvasoft_Android/Assignments/Assignment5/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.16" />
+        <entry key="..\:/AndroidStudioProjects/Tatvasoft_Android/Assignments/Assignment5/app/src/main/res/drawable/ic_baseline_menu_book_24.xml" value="0.16" />
+        <entry key="..\:/AndroidStudioProjects/Tatvasoft_Android/Assignments/Assignment5/app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.16" />
+        <entry key="..\:/AndroidStudioProjects/Tatvasoft_Android/Assignments/Assignment5/app/src/main/res/drawable/ic_baseline_phone_24.xml" value="0.16" />
+        <entry key="..\:/AndroidStudioProjects/Tatvasoft_Android/Assignments/Assignment5/app/src/main/res/drawable/ic_baseline_school_24.xml" value="0.16" />
+        <entry key="..\:/AndroidStudioProjects/Tatvasoft_Android/Assignments/Assignment5/app/src/main/res/drawable/ic_female.xml" value="0.16" />
+        <entry key="..\:/AndroidStudioProjects/Tatvasoft_Android/Assignments/Assignment5/app/src/main/res/drawable/ic_launcher_background.xml" value="0.16" />
+        <entry key="..\:/AndroidStudioProjects/Tatvasoft_Android/Assignments/Assignment5/app/src/main/res/drawable/ic_male.xml" value="0.16" />
+        <entry key="..\:/AndroidStudioProjects/Tatvasoft_Android/Assignments/Assignment5/app/src/main/res/layout-land/activity_educational_details.xml" value="0.29188712522045857" />
+        <entry key="..\:/AndroidStudioProjects/Tatvasoft_Android/Assignments/Assignment5/app/src/main/res/layout-land/activity_main.xml" value="0.29188712522045857" />
+        <entry key="..\:/AndroidStudioProjects/Tatvasoft_Android/Assignments/Assignment5/app/src/main/res/layout/activity_educational_details.xml" value="0.1875" />
+        <entry key="..\:/AndroidStudioProjects/Tatvasoft_Android/Assignments/Assignment5/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/AndroidStudioProjects/Tatvasoft_Android/Assignments/Assignment5/app/src/main/res/layout/layout_dropdown_item.xml" value="0.307518115942029" />
         <entry key="..\:/Users/vedant trivedi/AndroidStudioProjects/Tatvasoft_Android/Assignment5/app/src/main/res/drawable/ic_baseline_flag_24.xml" value="0.20462962962962963" />
         <entry key="..\:/Users/vedant trivedi/AndroidStudioProjects/Tatvasoft_Android/Assignment5/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.20462962962962963" />
         <entry key="..\:/Users/vedant trivedi/AndroidStudioProjects/Tatvasoft_Android/Assignment5/app/src/main/res/drawable/ic_launcher_background.xml" value="0.20925925925925926" />

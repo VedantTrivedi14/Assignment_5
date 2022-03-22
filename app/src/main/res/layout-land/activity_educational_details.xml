@@ -6,47 +6,49 @@
     android:layout_height="match_parent"
     tools:context=".EducationalDetailsActivity">
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/linearLayoutEducation"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_height="wrap_content">
+
         <TextView
+            android:id="@+id/txtHeader"
             style="@style/pageHeader"
-            android:text="@string/Educational_Details" />
+            android:text="@string/Educational_Details"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/etSchoolField"
             style="@style/etDropDownField"
             android:hint="@string/Schooling"
-            app:helperText="Required*"
-            app:helperTextTextColor="@color/red"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtHeader"
             app:startIconDrawable="@drawable/ic_baseline_menu_book_24">
 
             <AutoCompleteTextView
                 android:id="@+id/ac_txtSchool"
                 style="@style/editText"
                 android:inputType="none"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtHeader"
                 tools:ignore="LabelFor" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/txtP_tage"
-                style="@style/txtStyle"
-                android:text="@string/percentage" />
+        <TextView
+            android:id="@+id/txtP_tage"
+            style="@style/txtStyle"
+            android:text="@string/percentage"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/etSchoolField" />
 
-            <TextView
-                android:id="@+id/txtPercentageValue"
-                style="@style/txtStyle" />
-
-
-        </LinearLayout>
+        <TextView
+            android:id="@+id/txtPercentageValue"
+            style="@style/txtStyle"
+            app:layout_constraintStart_toEndOf="@id/txtP_tage"
+            app:layout_constraintTop_toBottomOf="@id/etSchoolField" />
 
 
         <com.google.android.material.slider.Slider
@@ -54,55 +56,62 @@
             style="@style/editText"
             android:stepSize="0.5"
             android:valueFrom="0"
-            android:valueTo="100" />
+            android:valueTo="100"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtPercentageValue" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/etGraduationField"
             style="@style/etDropDownField"
             android:hint="@string/Graduation"
-            app:helperText="Required*"
-            app:helperTextTextColor="@color/red"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/percentageSlider"
             app:startIconDrawable="@drawable/ic_baseline_school_24">
 
             <AutoCompleteTextView
                 android:id="@+id/ac_txtGraduation"
                 style="@style/editText"
                 android:inputType="none"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/percentageSlider"
                 tools:ignore="LabelFor" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+        <TextView
+            android:id="@+id/txtCgpa"
+            style="@style/txtStyle"
+            android:text="@string/CGPA"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/etGraduationField" />
 
-            <TextView
-                android:id="@+id/txtCgpa"
+        <TextView
+            android:id="@+id/txtCgpaValue"
+            style="@style/txtStyle"
+            app:layout_constraintStart_toEndOf="@id/txtCgpa"
+            app:layout_constraintTop_toBottomOf="@id/etGraduationField" />
 
-                style="@style/txtStyle"
-                android:text="@string/CGPA" />
-
-            <TextView
-                android:id="@+id/txtCgpaValue"
-                style="@style/txtStyle" />
-        </LinearLayout>
 
         <com.google.android.material.slider.Slider
             android:id="@+id/cgpaSlider"
             style="@style/editText"
             android:stepSize="0.1"
             android:valueFrom="0"
-            android:valueTo="10" />
+            android:valueTo="10"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtCgpa" />
 
-            <Button
-                android:id="@+id/btnSave"
-                style="@style/btnStyle"
-                android:layout_gravity="center"
-                android:text="@string/Sign_Up" />
+        <Button
+            android:id="@+id/btnSave"
+            style="@style/btnStyle"
+            android:text="@string/Sign_Up"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cgpaSlider" />
 
-    </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 </ScrollView>
